@@ -1,89 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statvion Infotech Solutions</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background-color: #333; color: white; padding: 1rem; text-align: center; }
-        nav { background-color: #444; padding: 0.5rem; }
-        nav ul { list-style: none; padding: 0; text-align: center; }
-        nav li { display: inline; margin: 0 1rem; }
-        nav a { color: white; text-decoration: none; }
-        section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
-        .hero { background-color: #007bff; color: white; text-align: center; padding: 3rem; }
-        .services { display: flex; flex-wrap: wrap; justify-content: space-around; }
-        .service { background: white; padding: 1rem; margin: 1rem; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 30%; min-width: 250px; }
-        footer { background-color: #333; color: white; text-align: center; padding: 1rem; }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statvion IT Solutions</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Statvion Infotech Solution</h1>
-        <p>Your Trusted Partner in Technology</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="home" class="hero">
-        <h2>Welcome to TechSolutions</h2>
-        <p>We provide expert IT solutions including network setup, cybersecurity, cloud services, and more. Let's optimize your business technology.</p>
-        <a href="#contact" style="background: white; color: #007bff; padding: 0.5rem 1rem; text-decoration: none; border-radius: 5px;">Get Started</a>
-    </section>
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Network Setup & Management</h3>
-                <p>Design, install, and maintain secure networks for your organization.</p>
-            </div>
-            <div class="service">
-                <h3>Cybersecurity</h3>
-                <p>Protect your data with advanced threat detection and compliance solutions.</p>
-            </div>
-            <div class="service">
-                <h3>Cloud Services</h3>
-                <p>Migrate to the cloud for scalable, cost-effective computing resources.</p>
-            </div>
-            <div class="service">
-                <h3>IT Support</h3>
-                <p>24/7 helpdesk support for hardware, software, and troubleshooting.</p>
-            </div>
-            <div class="service">
-                <h3>Data Backup & Recovery</h3>
-                <p>Ensure business continuity with reliable backup and disaster recovery plans.</p>
-            </div>
-            <div class="service">
-                <h3>Custom Software Development</h3>
-                <p>Build tailored applications to meet your unique business needs.</p>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>TechSolutions has been serving businesses for over 10 years, delivering innovative IT solutions that drive growth and efficiency. Our team of certified experts is committed to your success.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@techsolutions.com | Phone: (123) 456-7890 | Address: 123 Tech Street, City, State 12345</p>
-        <form action="#" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" required></textarea><br><br>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2023 TechSolutions IT Services. All rights reserved.</p>
-    </footer>
+
+<!-- Header -->
+<header>
+    <div class="container nav">
+        <h1 class="logo">Statvion</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h2>End-to-End IT Solutions for Digital Growth</h2>
+        <p>Software • Cloud • Data • AI • Enterprise Solutions</p>
+        <button onclick="scrollToContact()">Schedule a Consultation</button>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="grid">
+        <div class="card">Software Development</div>
+        <div class="card">Web & Mobile Applications</div>
+        <div class="card">Cloud & DevOps</div>
+        <div class="card">Data Analytics & AI</div>
+        <div class="card">API & System Integration</div>
+        <div class="card">IT Consulting</div>
+    </div>
+</section>
+
+<!-- Solutions -->
+<section id="solutions" class="section light">
+    <h2>Enterprise Solutions</h2>
+    <p class="center">
+        We help enterprises modernize infrastructure, optimize operations,
+        and enable data-driven decision making.
+    </p>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p class="center">
+        Statvion IT Solutions is a service-based technology company delivering
+        scalable, secure, and future-ready IT solutions for startups and enterprises.
+    </p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section light">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="formMsg"></p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Statvion IT Solutions. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
